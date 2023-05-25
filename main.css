@@ -1,0 +1,169 @@
+/* основные стили страницы */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, sans-serif;
+  min-height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+
+.header__logo {
+  height: 400px;
+}
+
+.header__title {
+  font-size: 30px;
+}
+
+.header__buttons .button {
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: 1px solid #848484;
+  background-color: #848484;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.header__buttons .button:hover {
+  background-color: #fff;
+  color: #848484;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.mobile_menu nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile_menu nav ul a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.mobile_menu nav ul a:hover {
+  background-color: #848484;
+}
+
+.categories {
+    flex-basis: 200px;
+    margin-right: 20px;
+  }
+
+.category {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #a5a5a5;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-color: #a89a9a;
+}
+
+.item__block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.item {
+  width: calc((100% / 3) - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__title {
+  font-size: 20px;
+}
+
+.item__image img {
+  height: 230px;
+}
+
+.item__info {
+  margin-top: 20px;
+}
+
+.item__text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* стили для темной темы */
+.app.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.app.dark-mode .app__header {
+  background-color: #444;
+}
+
+.app.dark-mode .header__buttons .button {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.app.dark-mode .header__buttons .button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.app.dark-mode .category {
+  border-color: #ccc;
+  background-color: #333;
+  color: #fff;
+}
+
+.app.dark-mode .category:hover {
+  background-color: #444;
+}
+
+.app.dark-mode .item {
+  background-color: #444;
+  border-color: transparent;
+  color: #fff;
+}
+
+.app.dark-mode .item__header {
+  border-color: #fff;
+}
+
+.app.dark-mode .item__title {
+  color: #fff;
+}

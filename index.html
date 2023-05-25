@@ -1,0 +1,269 @@
+<head>
+    <title>Главная страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+
+<body>
+    <div class="app">
+        
+        <section class="app__header">
+            <img class="header__logo" src="img/v.avif" alt="" >
+            <h1 class="header__title">Лучшее для лучших</h1>
+            <div class="header__buttons">
+                <button class="button" id="light-mode-button">Белая</button>
+                <button class="button" id="dark-mode-button">Цветная</button>
+                <a href="login.html" class="button">Войти</a>
+
+            </div>
+
+            <div class="mobile_menu">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                      <!--
+                      A fake / hidden checkbox is used as click reciever,
+                      so you can use the :checked selector on it.
+                      -->
+                      <input type="checkbox">
+                      
+                      <!--
+                      Some spans to act as a hamburger.
+                      
+                      They are acting like a real hamburger,
+                      not that McDonalds stuff.
+                      -->
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      
+                      <!--
+                      Too bad the menu has to be inside of the button
+                      but hey, it's pure CSS magic.
+                      -->
+                      <ul id="menu">
+                        <a href="login.html">Войти</a>
+                        <p>Категории:</p>
+                        <a href="#">Кроссовки</a>
+                        <a href="#">Худи</a>
+                        <a href="#">Джинсы</a>
+                        <a href="#">Рубашки</a>
+                        <a href="#">Водолазки</a>
+                        <a href="#">Жилеты</a>
+                        <a href="#">Футболки</a>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+
+        </section>
+
+        <section class="app__body">
+
+            <div class="app__widget">
+                <h3>Категории</h3>
+                <div class="categories">
+                    <a id="flowers" class="category button">Кроссовки</a>
+                    <a id="candles" class="category button">Худи</a>
+                    <a id="beads" class="category button">Джинсы</a>
+                    <a id="leather" class="category button">Рубашки</a>
+                </div>
+            </div>        
+
+            <div class="app__items">
+                
+                <div id="items" class="item__block">
+
+                    <div id="1" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Chunky Sneakers</h3>
+                            <div class="item__image">
+                                <img src="img/02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="2" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Nike air force 1</h3>
+                            <div class="item__image">
+                                <img src="img/01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="3" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">
+                                Adidas forum low 84</h3>
+                            <div class="item__image">
+                                <img src="img/03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="4" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Blue hoodie</h3>
+                            <div class="item__image">
+                                <img src="img/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="5" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Vest with print</h3>
+                            <div class="item__image">
+                                <img src="img/1_2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="6" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Light blue jeans</h3>
+                            <div class="item__image">
+                                <img src="img/08.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="7" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Blue jeans</h3>
+                            <div class="item__image">
+                                <img src="img/09.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="8" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Fluffy hoodie</h3>
+                            <div class="item__image">
+                                <img src="img/06.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="9" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Plush hoodie</h3>
+                            <div class="item__image">
+                                <img src="img/07.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="10" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">Turtleneck black</h3>
+                            <div class="item__image">
+                                <img src="img/10.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="11" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">New Balance CT302</h3>
+                            <div class="item__image">
+                                <img src="img/04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="12" class="item">
+                        <div class="item__header">
+                            <h3 class="item__title">White shirt</h3>
+                            <div class="item__image">
+                                <img src="img/1_1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <div class="item__info">
+                                <p class="item__text">Цена:</p>
+                                <p class="item__text">Рейтинг: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
